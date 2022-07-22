@@ -104,9 +104,10 @@ console.log(person2);*/
 
 let age=20;
 
+/*
 let name=prompt(middle);
 console.log(!!name);
 let lastname=prompt(last);
 console.log(!!lastname);
 let old=prompt(age);
-console.log(!!old)
+console.log(!!old)*/
