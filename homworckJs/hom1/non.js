@@ -102,12 +102,9 @@ console.log(person1);
 let person2=`${first} ${middle} ${last}`;
 console.log(person2);*/
 
-let age=20;
-
-/*
 let name=prompt(middle);
 console.log(!!name);
 let lastname=prompt(last);
 console.log(!!lastname);
-let old=prompt(age);
-console.log(!!old)*/
+let old = prompt(lol);
+console.log(!!old)
