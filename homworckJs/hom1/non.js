@@ -103,8 +103,6 @@ let person2=`${first} ${middle} ${last}`;
 console.log(person2);*/
 
 let name=prompt(middle);
-console.log(!!name);
 let lastname=prompt(last);
-console.log(!!lastname);
 let old = prompt(lol);
-console.log(!!old)
+console.log(middle,last,old);
