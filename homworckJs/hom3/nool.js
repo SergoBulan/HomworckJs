@@ -102,6 +102,8 @@
 //     console.log(x);
 // }else if (y>x){
 //     console.log(y);
+// }else if (y=x){
+//     console.log('non stop');
 // }
 
 //  6 - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
