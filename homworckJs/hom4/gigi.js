@@ -53,14 +53,21 @@
 // замість 'ITEM OF ARRAY' підставити елемент з масиву щоб получився цілий список з даними з масиву
 //
 
-
 // let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
-// for (item of listOfItems) {
+// for(item of listOfItems) {
 //     document.write(`<ul>
 //         <li>${item}</li>
 //         </ul>`)
 // }
 
+//виправив...
+
+let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+for ( item of listOfItems) {
+   document.write (`<ul>`);
+   document.write(`<li>${item}</li>`);
+   document.write(`</ul>`);
+}
 
 // -----------------------------------------------
 //
