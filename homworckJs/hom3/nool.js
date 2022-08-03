@@ -7,14 +7,14 @@
 //треба просто цими числами перевірити чи то вводити їх якось в саму схему?
 
 
-// let x = +prompt('gift');
-// if ( x>0) {
-//     console.log('true');
-// } else if (x<0) {
-//     console.log('true');
-// } else {
-//     console.log('false')
-// }
+let x = +prompt('gift');
+if ( x>0) {
+    console.log('true');
+} else if (x<0) {
+    console.log('true');
+} else {
+    console.log('false')
+}
 
 // let x = +prompt('gift');
 //  if ( x !== 0) {
@@ -113,5 +113,5 @@
 
 // ???????????????????????????????????????????????????????????
 
-let  x = prompt('GustDoIt') || 'default'
-console.log('everything is much easier than I thought?');
+// let  x = prompt('GustDoIt') || 'default'
+// console.log('everything is much easier than I thought?');
