@@ -104,14 +104,14 @@
 
 
 
-function gigi(foo){
-    document.write(`<ol>`)
-    for(const item of foo){
-        document.write(`<li>${item}</li>`)
-    }
-    document.write(`</ol>`)
-}
-gigi([23,true,'tea'])
+// function gigi(foo){
+//     document.write(`<ol>`)
+//     for(const item of foo){
+//         document.write(`<li>${item}</li>`)
+//     }
+//     document.write(`</ol>`)
+// }
+// gigi([23,true,'tea'])
 
 
 // 9- створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ.
@@ -129,9 +129,13 @@ gigi([23,true,'tea'])
 // for (let i= 0;i<users.length;i++) {
 //     document.write(`<div>${users[i].id} -- ${users[i].name} -- ${users[i].age}</div>`);
 // }
-
-
-
+//
+// function foo(arr){
+//     for (const arrEl in arr) {
+//         document.write(`<div>${arrEl.id} -- ${arrEl.name} -- ${arrEl.age}</div>`);
+//     }
+// }
+// foo(users);
 
 
 // 10- створити функцію яка повертає найменьше число з масиву

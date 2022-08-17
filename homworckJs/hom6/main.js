@@ -145,99 +145,99 @@
 // }
 
 
-let cards = [
-    {cardSuit: 'clubs', value: 'Ace', color:'black'},
-    {cardSuit: 'clubs', value: 2, color:'black'},
-    {cardSuit: 'clubs', value: 3, color:'black'},
-    {cardSuit: 'clubs', value: 4, color:'black'},
-    {cardSuit: 'clubs', value: 5, color:'black'},
-    {cardSuit: 'clubs', value: 6, color:'black'},
-    {cardSuit: 'clubs', value: 7, color:'black'},
-    {cardSuit: 'clubs', value: 8, color:'black'},
-    {cardSuit: 'clubs', value: 9, color:'black'},
-    {cardSuit: 'clubs', value: 10, color:'black'},
-    {cardSuit: 'clubs', value: 'Jack', color:'black'},
-    {cardSuit: 'clubs', value: 'Queen', color:'black'},
-    {cardSuit: 'clubs', value: 'King', color:'black'},
-
-    {cardSuit: 'diamonds', value: 'Ace', color:'red'},
-    {cardSuit: 'diamonds', value: 2, color:'red'},
-    {cardSuit: 'diamonds', value: 3, color:'red'},
-    {cardSuit: 'diamonds', value: 4, color:'red'},
-    {cardSuit: 'diamonds', value: 5, color:'red'},
-    {cardSuit: 'diamonds', value: 6, color:'red'},
-    {cardSuit: 'diamonds', value: 7, color:'red'},
-    {cardSuit: 'diamonds', value: 8, color:'red'},
-    {cardSuit: 'diamonds', value: 9, color:'red'},
-    {cardSuit: 'diamonds', value: 10, color:'red'},
-    {cardSuit: 'diamonds', value: 'Jack', color:'red'},
-    {cardSuit: 'diamonds', value: 'Queen', color:'red'},
-    {cardSuit: 'diamonds', value: 'King', color:'red'},
-
-    {cardSuit: 'hearts', value: 'Ace', color:'red'},
-    {cardSuit: 'hearts', value: 2, color:'red'},
-    {cardSuit: 'hearts', value: 3, color:'red'},
-    {cardSuit: 'hearts', value: 4, color:'red'},
-    {cardSuit: 'hearts', value: 5, color:'red'},
-    {cardSuit: 'hearts', value: 6, color:'red'},
-    {cardSuit: 'hearts', value: 7, color:'red'},
-    {cardSuit: 'hearts', value: 8, color:'red'},
-    {cardSuit: 'hearts', value: 9, color:'red'},
-    {cardSuit: 'hearts', value: 10, color:'red'},
-    {cardSuit: 'hearts', value: 'Jack', color:'red'},
-    {cardSuit: 'hearts', value: 'Queen', color:'red'},
-    {cardSuit: 'hearts', value: 'King', color:'red'},
-    {value: 'Joker', color:'red'},
-
-    {cardSuit: 'spades', value: 'Ace', color:'black'},
-    {cardSuit: 'spades', value: 2, color:'black'},
-    {cardSuit: 'spades', value: 3, color:'black'},
-    {cardSuit: 'spades', value: 4, color:'black'},
-    {cardSuit: 'spades', value: 5, color:'black'},
-    {cardSuit: 'spades', value: 6, color:'black'},
-    {cardSuit: 'spades', value: 7, color:'black'},
-    {cardSuit: 'spades', value: 8, color:'black'},
-    {cardSuit: 'spades', value: 9, color:'black'},
-    {cardSuit: 'spades', value: 10, color:'black'},
-    {cardSuit: 'spades', value: 'Jack', color:'black'},
-    {cardSuit: 'spades', value: 'Queen', color:'black'},
-    {cardSuit: 'spades', value: 'King', color:'black'},
-    {value: 'Joker', color:'black'},
-
-];
-
-// let find = cards.filter(item => item.value === 'Ace' && item.cardSuit === 'spades');
-// console.log(find);
-
-// let list = cards.filter(item => item.value === 6);
-// console.log(list);
-
-// let diamondsList = cards.filter(item => item.cardSuit === 'diamonds');
-// console.log(diamondsList);
-
-// let redList = cards.filter(item => item.color === 'red');
-// console.log(redList);
-
-// let clubsfind = cards.filter(item => item.cardSuit === 'clubs' && item.value != 8 && item.value != 6 && item.value != 7 && item.value != 5 && item.value != 4 && item.value !=3 && item.value !=2);
-// let clubsfind = cards.filter(item => item.cardSuit === 'clubs' && item.value > '8' );
-// console.log(clubsfind);
-
-let reduce = cards.reduce((asimilyator,card) => {
-    if (card.cardSuit === 'spades'){
-        asimilyator.suitSpades.push(card);
-    }
-    if (card.cardSuit === 'hearts') {
-        asimilyator.suitHearts.push(card);
-    }
-    if (card.cardSuit === 'diamonds') {
-        asimilyator.suitDiamonds.push(card);
-    }
-    if (card.cardSuit === 'clubs') {
-        asimilyator.suitClubs.push(card);
-
-    }
-    return asimilyator;
-
-},{suitSpades:[],suitHearts:[],suitDiamonds:[],suitClubs:[]});
-
-console.log(reduce);
+// let cards = [
+//     {cardSuit: 'clubs', value: 'Ace', color:'black'},
+//     {cardSuit: 'clubs', value: 2, color:'black'},
+//     {cardSuit: 'clubs', value: 3, color:'black'},
+//     {cardSuit: 'clubs', value: 4, color:'black'},
+//     {cardSuit: 'clubs', value: 5, color:'black'},
+//     {cardSuit: 'clubs', value: 6, color:'black'},
+//     {cardSuit: 'clubs', value: 7, color:'black'},
+//     {cardSuit: 'clubs', value: 8, color:'black'},
+//     {cardSuit: 'clubs', value: 9, color:'black'},
+//     {cardSuit: 'clubs', value: 10, color:'black'},
+//     {cardSuit: 'clubs', value: 'Jack', color:'black'},
+//     {cardSuit: 'clubs', value: 'Queen', color:'black'},
+//     {cardSuit: 'clubs', value: 'King', color:'black'},
+//
+//     {cardSuit: 'diamonds', value: 'Ace', color:'red'},
+//     {cardSuit: 'diamonds', value: 2, color:'red'},
+//     {cardSuit: 'diamonds', value: 3, color:'red'},
+//     {cardSuit: 'diamonds', value: 4, color:'red'},
+//     {cardSuit: 'diamonds', value: 5, color:'red'},
+//     {cardSuit: 'diamonds', value: 6, color:'red'},
+//     {cardSuit: 'diamonds', value: 7, color:'red'},
+//     {cardSuit: 'diamonds', value: 8, color:'red'},
+//     {cardSuit: 'diamonds', value: 9, color:'red'},
+//     {cardSuit: 'diamonds', value: 10, color:'red'},
+//     {cardSuit: 'diamonds', value: 'Jack', color:'red'},
+//     {cardSuit: 'diamonds', value: 'Queen', color:'red'},
+//     {cardSuit: 'diamonds', value: 'King', color:'red'},
+//
+//     {cardSuit: 'hearts', value: 'Ace', color:'red'},
+//     {cardSuit: 'hearts', value: 2, color:'red'},
+//     {cardSuit: 'hearts', value: 3, color:'red'},
+//     {cardSuit: 'hearts', value: 4, color:'red'},
+//     {cardSuit: 'hearts', value: 5, color:'red'},
+//     {cardSuit: 'hearts', value: 6, color:'red'},
+//     {cardSuit: 'hearts', value: 7, color:'red'},
+//     {cardSuit: 'hearts', value: 8, color:'red'},
+//     {cardSuit: 'hearts', value: 9, color:'red'},
+//     {cardSuit: 'hearts', value: 10, color:'red'},
+//     {cardSuit: 'hearts', value: 'Jack', color:'red'},
+//     {cardSuit: 'hearts', value: 'Queen', color:'red'},
+//     {cardSuit: 'hearts', value: 'King', color:'red'},
+//     {value: 'Joker', color:'red'},
+//
+//     {cardSuit: 'spades', value: 'Ace', color:'black'},
+//     {cardSuit: 'spades', value: 2, color:'black'},
+//     {cardSuit: 'spades', value: 3, color:'black'},
+//     {cardSuit: 'spades', value: 4, color:'black'},
+//     {cardSuit: 'spades', value: 5, color:'black'},
+//     {cardSuit: 'spades', value: 6, color:'black'},
+//     {cardSuit: 'spades', value: 7, color:'black'},
+//     {cardSuit: 'spades', value: 8, color:'black'},
+//     {cardSuit: 'spades', value: 9, color:'black'},
+//     {cardSuit: 'spades', value: 10, color:'black'},
+//     {cardSuit: 'spades', value: 'Jack', color:'black'},
+//     {cardSuit: 'spades', value: 'Queen', color:'black'},
+//     {cardSuit: 'spades', value: 'King', color:'black'},
+//     {value: 'Joker', color:'black'},
+//
+// ];
+//
+// // let find = cards.filter(item => item.value === 'Ace' && item.cardSuit === 'spades');
+// // console.log(find);
+//
+// // let list = cards.filter(item => item.value === 6);
+// // console.log(list);
+//
+// // let diamondsList = cards.filter(item => item.cardSuit === 'diamonds');
+// // console.log(diamondsList);
+//
+// // let redList = cards.filter(item => item.color === 'red');
+// // console.log(redList);
+//
+// // let clubsfind = cards.filter(item => item.cardSuit === 'clubs' && item.value != 8 && item.value != 6 && item.value != 7 && item.value != 5 && item.value != 4 && item.value !=3 && item.value !=2);
+// // let clubsfind = cards.filter(item => item.cardSuit === 'clubs' && item.value > '8' );
+// // console.log(clubsfind);
+//
+// let reduce = cards.reduce((asimilyator,card) => {
+//     if (card.cardSuit === 'spades'){
+//         asimilyator.suitSpades.push(card);
+//     }
+//     if (card.cardSuit === 'hearts') {
+//         asimilyator.suitHearts.push(card);
+//     }
+//     if (card.cardSuit === 'diamonds') {
+//         asimilyator.suitDiamonds.push(card);
+//     }
+//     if (card.cardSuit === 'clubs') {
+//         asimilyator.suitClubs.push(card);
+//
+//     }
+//     return asimilyator;
+//
+// },{suitSpades:[],suitHearts:[],suitDiamonds:[],suitClubs:[]});
+//
+// console.log(reduce);
