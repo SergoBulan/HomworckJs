@@ -35,34 +35,42 @@
 // створити пустий масив, наповнити його 10 об'єктами Client
 // - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
 
-function Client(id,name,surname,email,phone,order) {
 
-    this.id = id;
-    this.name = name;
-    this.surname = surname;
-    this.email = email;
-    this.phone = phone;
-    this.order = order;
-}
+
+// почему ета X***a у мене не хоче працювати... викидає помилку кожний рядок??
+// поясніть бо сил вже нема і починаю здаватися... через цю проблему не зміг зробити дз і вже не розумію що я тут роблю
+// бо на такому дрібному а стою намертво.( це вже втретє або вже незнаю в котре з нуля і одно й те саме)
 
 
 
-let client = [];
-    let user1 = new Client(1,'Kolya','Dmitrich','kolya@fugi.com',0934442023,[1,4,5,67]),
-    let user3 = new Client(14,'Roma','Gypsy','vseukradu@fugi.com',0711209454,[23,3,4]),
-    let user4 = new Client(666,'Vitya','Stopudov','yateotvechayu@fugi.com',0994005732,[1]),
-    let user5 = new Client(5,'Dima','Dayuslovo','balabol@fugi.com',0987114532,[12,4]),
-    let user6 = new Client(6,'Edvard','Folkin','nottolkin@fugi.com',0976543210,[12,65,4,33,2,56,8,4,3,9,5]),
-    let user7 = new Client(7,'Batman','Mouse','nighthero@fugi.com',911,[1,4,6,2]),
-    let user8 = new Client(85,'One','Punch-Man','prostohero@fugi.com',0664543031,[4,98,4,2]),
-    let user9 = new Client(45,'Rick','Sunches','brilliantscientist@fugi.com',0986542198,[4,3]):
-
-client.push(user1,user2,user3,user4,user5,user6,user7,user8,user9);
-
-console.log(client);
-
-let sort = client.sort((a,b) => a.id.length - b.id.length);
-console.log(sort);
+// function Client(id,name,surname,email,phone,order) {
+//
+//     this.id = id;
+//     this.name = name;
+//     this.surname = surname;
+//     this.email = email;
+//     this.phone = phone;
+//     this.order = order;
+// }
+//
+//
+//
+// let client = [];
+//     let user1 = new Client(1,'Kolya','Dmitrich','kolya@fugi.com',0934442023,[1,4,5,67]),
+//     let user3 = new Client(14,'Roma','Gypsy','vseukradu@fugi.com',0711209454,[23,3,4]),
+//     let user4 = new Client(666,'Vitya','Stopudov','yateotvechayu@fugi.com',0994005732,[1]),
+//     let user5 = new Client(5,'Dima','Dayuslovo','balabol@fugi.com',0987114532,[12,4]),
+//     let user6 = new Client(6,'Edvard','Folkin','nottolkin@fugi.com',0976543210,[12,65,4,33,2,56,8,4,3,9,5]),
+//     let user7 = new Client(7,'Batman','Mouse','nighthero@fugi.com',911,[1,4,6,2]),
+//     let user8 = new Client(85,'One','Punch-Man','prostohero@fugi.com',0664543031,[4,98,4,2]),
+//     let user9 = new Client(45,'Rick','Sunches','brilliantscientist@fugi.com',0986542198,[4,3]):
+//
+// client.push(user1,user2,user3,user4,user5,user6,user7,user8,user9);
+//
+// console.log(client);
+//
+// let sort = client.sort((a,b) => a.id.length - b.id.length);
+// console.log(sort);
 
 // - Створити функцію конструктор яка дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
 // -- drive () - яка виводить в консоль `їдемо зі швидкістю ${максимальна швидкість} на годину`
