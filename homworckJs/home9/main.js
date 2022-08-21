@@ -32,32 +32,43 @@ for (const items of sides) {
     if (items.length !== 0) {
         let divInfo = document.createElement('div');
         divInfo.classList.add('wrap');
+        divInfo.style.width = '200px';
         document.body.appendChild(divInfo);
+
 
         let h2 = document.createElement('h2');
         h2.classList.add('alpha');
-        h2.alpha.innerText = items.name;
-        h2.style.beckground = blue;
+        h2.innerText = items.name;
+        h2.style.beckground = 'blue';
 
 
         let p = document.createElement('p');
         p.classList.add('beta')
         p.innerText = items.solders + ' ' + items.status;
 
+
         let print = document.createElement('img');
         print.classList.add('collapse');
         print.src = items.flag;
+        print.style.width = '100%';
+
+
+        divInfo.appendChild(h2);
+        divInfo.appendChild(p);
+        divInfo.appendChild(print);
+
+        let newDiv = document.createElement('div');
+        newDiv.classList.add('clon');
+        newDiv.style.width = '200px';
+        document.body.appendChild(newDiv);
+
+        let clonDiv = divInfo.cloneNode(true);
+        newDiv.appendChild(clonDiv);
+
     }
 
-    divInfo.wrap.appendChild(alpha);
-    divInfo.wrap.append(beta);
-    divInfo.wrap.append(collapse);
-
-
 };
-wrap.appendChild(divInfo.cloneNode(true));
 
-//чому спочатку все зпрацювало а потім після виконання classList.add помилки бити почало? навіть при приберанні цієї дії
 
 // ___________________________________________________________________________________________________________________
 
@@ -252,7 +263,7 @@ wrap.appendChild(divInfo.cloneNode(true));
 //             div.appendChild(p);
 //
 //             let imgAll = document.createElement('img');
-//             imgAll.classList.add('pictur');
+//             imgAll.classList.add('dvd');
 //             imgAll.src = item.photo;
 //             div.appendChild(imgAll);
 //     }
