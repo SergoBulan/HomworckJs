@@ -66,6 +66,31 @@
 
 
 
+// let ulEl = document.getElementsByClassName('menu')[0];
+// let howArray = ['Main','Products','About us','Contacts'];
+//
+// function creatBlock (array) {
+//     for (const item of array){
+//         if (item.length !== 0){
+//             let liList = document.createElement('li');
+//             liList.innerText = item;
+//             ulEl.appendChild(liList);
+//         }
+//
+//     }
+// }
+// creatBlock(howArray);
+//
+//////////////////////////////////////
+// for (const item of array) {
+//     let liList = document.createElement('li');
+//     liList.innerText = item;
+//     ulEl.appendChild(liList);
+// }
+///////////////////////////////////
+
+
+
 
 // - Є масив
 // let coursesAndDurationArray = [
@@ -79,9 +104,32 @@
 // Для кожного елементу масиву зробити блок в якому вивести інформацію про title та monthDuration
 // Завдання робити через цикли.
 
+// let coursesAndDurationArray = [
+//     {title: 'JavaScript Complex', monthDuration: 5},
+//     {title: 'Java Complex', monthDuration: 6},
+//     {title: 'Python Complex', monthDuration: 6},
+//     {title: 'QA Complex', monthDuration: 4},
+//     {title: 'FullStack', monthDuration: 7},
+//     {title: 'Frontend', monthDuration: 4}
+// ];
+// let div = document.createElement('div');
+// div.classList.add('target');
+// document.body.appendChild(div);
+//
+// function creatBlock (array) {
+//     for (const item of array){
+//         if (item.length !== 0){
+//             let h2 = document.createElement('h2');
+//             h2.innerText = item.title + ' ' + item.monthDuration;
+//             div.appendChild(h2);
+//         }
+//
+//     }
+// }
+// creatBlock(coursesAndDurationArray);
 
 
-
+//
 // - Є масив
 // let coursesAndDurationArray = [
 //     {title: 'JavaScript Complex', monthDuration: 5},
@@ -94,4 +142,47 @@
 // За допомоги скріпта для кожного елементу масиву зробити <div class='item'> ,
 // в якому буде <h1 class='heading'>  з title  елементу, та <p class='description'>
 // з monthDuration елементу.
-//     Завдання робити через цикли.
+//     Завдання робити через цикли
+
+
+// let coursesAndDurationArray = [
+//     {title: 'JavaScript Complex', monthDuration: 5},
+//     {title: 'Java Complex', monthDuration: 6},
+//     {title: 'Python Complex', monthDuration: 6},
+//     {title: 'QA Complex', monthDuration: 4},
+//     {title: 'FullStack', monthDuration: 7},
+//     {title: 'Frontend', monthDuration: 4}
+// ];
+// let div = document.createElement('div');
+// div.classList.add('target');
+// document.body.appendChild(div);
+//
+//
+// function creatBlock (array) {
+//     for (const item of array){
+//         if (item.length !== 0){
+//             let h2 = document.createElement('h2');
+//             h2.classList.add('heading');
+//             h2.innerText = item.title;
+//             div.appendChild(h2);
+//
+//             let p = document.createElement('p');
+//             p.classList.add('description');
+//             p.innerText = item.monthDuration;
+//             div.appendChild(p);
+//         }
+//
+//     }
+// }
+// creatBlock(coursesAndDurationArray);
+//
+
+
+
+
+
+
+
+
+
+
