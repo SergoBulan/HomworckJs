@@ -7,68 +7,68 @@
 // - додати цей блок в body.
 // - клонувати його повністю, та додати клон в body.
 
-let sides = [
-    {
-        name: 'Свино-собаки',
-        status: 'terrorist',
-        solders: 1500000,
-        flag: 'https://24tv.ua/resources/photos/news/1200x1200_DIR/202203/1924214.jpg',
-    },
-    {
-        name: 'Ukraine',
-        status: 'heroic-defender',
-        solders: 250000,
-        flag: 'https://gdb.rferl.org/24293B5E-DC8F-4AA0-9845-CA844C0ECD49_w1080_h608.jpg',
-    },
-    {
-        name: 'Бульбаші',
-        status: 'terrorists-assistant',
-        solders: 200000,
-        flag: 'https://zname.com.ua/watermark/watermark.php?image=https://zname.com.ua/image/cache/catalog/content/Flagi-mira/Belarus_2x3-800x533.jpg',
-    }
-];
-
-for (const items of sides) {
-    if (items.length !== 0) {
-        let divInfo = document.createElement('div');
-        divInfo.classList.add('wrap');
-        divInfo.style.width = '200px';
-        document.body.appendChild(divInfo);
-
-
-        let h2 = document.createElement('h2');
-        h2.classList.add('alpha');
-        h2.innerText = items.name;
-        h2.style.beckground = 'blue';
-
-
-        let p = document.createElement('p');
-        p.classList.add('beta')
-        p.innerText = items.solders + ' ' + items.status;
-
-
-        let print = document.createElement('img');
-        print.classList.add('collapse');
-        print.src = items.flag;
-        print.style.width = '100%';
-
-
-        divInfo.appendChild(h2);
-        divInfo.appendChild(p);
-        divInfo.appendChild(print);
-
-        let newDiv = document.createElement('div');
-        newDiv.classList.add('clon');
-        newDiv.style.width = '200px';
-        document.body.appendChild(newDiv);
-
-        let clonDiv = divInfo.cloneNode(true);
-        newDiv.appendChild(clonDiv);
-
-    }
-
-};
-
+// let sides = [
+//     {
+//         name: 'Свино-собаки',
+//         status: 'terrorist',
+//         solders: 1500000,
+//         flag: 'https://24tv.ua/resources/photos/news/1200x1200_DIR/202203/1924214.jpg',
+//     },
+//     {
+//         name: 'Ukraine',
+//         status: 'heroic-defender',
+//         solders: 250000,
+//         flag: 'https://gdb.rferl.org/24293B5E-DC8F-4AA0-9845-CA844C0ECD49_w1080_h608.jpg',
+//     },
+//     {
+//         name: 'Бульбаші',
+//         status: 'terrorists-assistant',
+//         solders: 200000,
+//         flag: 'https://zname.com.ua/watermark/watermark.php?image=https://zname.com.ua/image/cache/catalog/content/Flagi-mira/Belarus_2x3-800x533.jpg',
+//     }
+// ];
+//
+// for (const items of sides) {
+//     if (items.length !== 0) {
+//         let divInfo = document.createElement('div');
+//         divInfo.classList.add('wrap');
+//         divInfo.style.width = '200px';
+//         document.body.appendChild(divInfo);
+//
+//
+//         let h2 = document.createElement('h2');
+//         h2.classList.add('alpha');
+//         h2.innerText = items.name;
+//         h2.style.beckground = 'blue';
+//
+//
+//         let p = document.createElement('p');
+//         p.classList.add('beta')
+//         p.innerText = items.solders + ' ' + items.status;
+//
+//
+//         let print = document.createElement('img');
+//         print.classList.add('collapse');
+//         print.src = items.flag;
+//         print.style.width = '100%';
+//
+//
+//         divInfo.appendChild(h2);
+//         divInfo.appendChild(p);
+//         divInfo.appendChild(print);
+//
+//         let newDiv = document.createElement('div');
+//         newDiv.classList.add('slon');
+//         newDiv.style.width = '200px';
+//         document.body.appendChild(newDiv);
+//
+//         let clonDiv = divInfo.cloneNode(true);
+//         newDiv.appendChild(clonDiv);
+//
+//     }
+//
+// };
+//
 
 // ___________________________________________________________________________________________________________________
 
