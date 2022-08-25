@@ -17,8 +17,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
             a.href = `../last/details.html?id=${JSON.stringify(user)}`;
             a.innerText = ' info user';
             div.appendChild(a);
-            // let button = document.createElement('button');
-            // button.innerText = 'info user';
+
 
 
             document.body.appendChild(div);
